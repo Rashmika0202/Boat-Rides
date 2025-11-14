@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-mina: 'Mina', sans-serif;
+  --font-mohave: 'Mohave', sans-serif;
+  --font-molengo: 'Molengo', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-petrona: 'Petrona', serif;
+}
+
+
+@font-face {
+  font-family: 'Nico Moji';
+  src: url('./assets/fonts/NicoMoji-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
