@@ -8,11 +8,11 @@ import location from "./assets/location.png";
 
 function footer() {
   return (
-    <footer className="container mx-auto  relative bg-[url('/background-image8.jpg')] bg-cover bg-center text-white lg:h-[490px] md:h-[380px] h-[1100px]">
+    <footer className="container mx-auto  relative bg-[url('/background-image8.jpg')] bg-cover bg-center text-white lg:h-[490px] md:h-[380px] h-[1200px]">
       <div className="absolute inset-0 bg-black/90"></div>
 
       <div className="relative md:flex md:flex-row flex flex-col md:justify-between xl:px-[60px] lg:px-[10px] md:gap-30 items-center h-full">
-        <div className="mt-10 flex flex-col items-center md:items-start">
+        <div className="md:mt-10 mt-20 flex flex-col items-center md:items-start">
           <img
             src={footerlogo}
             alt="Logo"

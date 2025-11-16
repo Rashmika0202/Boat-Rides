@@ -564,7 +564,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="container mx-auto  bg-[url(/background-image7.png)] bg-cover bg-center flex justify-center items-center lg:h-[561px] md:h-[400px] h-[300px] w-full">
+      <div className="container mx-auto  bg-[url(/background-image7.png)] bg-cover bg-center flex justify-center items-center lg:h-[561px] md:h-[400px] h-[400px] w-full">
         <div className="flex flex-col items-center gap-10">
           <div>
             <h1 className="font-nokora lg:text-[25px] md:text-[20px] text-[18px] font-black text-white text-center">
