@@ -11,7 +11,7 @@ const reviews = [
         review: "The speedboat ride was absolutely thrilling! Booking was super easy and the crew made us feel so safe. Best ocean experience I've ever had!",
         time: "2 Weeks ago",
         background: reviewCard,
-        stars: 5,
+        stars: 7,
         personImage: personImage
     },
     {
@@ -20,7 +20,7 @@ const reviews = [
         review: "The speedboat ride was absolutely thrilling! Booking was super easy and the crew made us feel so safe. Best ocean experience I've ever had!",
         time: "2 Weeks ago",
         background: reviewCard,
-        stars: 5,
+        stars: 6,
         personImage: personImage
     },
     {
@@ -38,7 +38,7 @@ const reviews = [
         review: "The speedboat ride was absolutely thrilling! Booking was super easy and the crew made us feel so safe. Best ocean experience I've ever had!",
         time: "2 Weeks ago",
         background: reviewCard,
-        stars: 5,
+        stars: 4,
         personImage: personImage
     },
     {
@@ -47,7 +47,7 @@ const reviews = [
         review: "The speedboat ride was absolutely thrilling! Booking was super easy and the crew made us feel so safe. Best ocean experience I've ever had!",
         time: "2 Weeks ago",
         background: reviewCard,
-        stars: 5,
+        stars: 3,
         personImage: personImage
     },
 ];

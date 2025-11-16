@@ -410,18 +410,18 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="container mx-auto  bg-[url(/background-image6.png)] bg-cover bg-center flex justify-center xl:h-[1295px] lg:h-[1200px] md:h-[850px] w-full">
+      <div className="container mx-auto  bg-[url(/background-image6.png)] bg-cover bg-center flex justify-center xl:h-[1295px] lg:h-[1200px] md:h-[850px] h-[2100px] w-full">
         <div className="flex flex-col justify-center items-center">
           <div className="text-center">
             <h1 className="text-white font-muktamalar text-[50px] mb-5">
               Our Boat Rides
             </h1>
-            <p className="text-white font-muktamalar lg:text-[20px] md:text-[1rem] lg:w-[638px] md:w-[500px] mb-20">
+            <p className="text-white font-muktamalar lg:text-[20px] md:text-[1rem] lg:w-[638px] md:w-[500px] w-[400px] mb-20">
               Find The Perfect Boat For Your Next Sea Adventure — From
               High-Speed Thrills To Peaceful Cruises.
             </p>
           </div>
-          <div className="flex flex-row lg:gap-10 md:gap-5 lg:px-0 md:px-4">
+          <div className="md:flex md:flex-row flex flex-col lg:gap-10 md:gap-5 gap-10 lg:px-0 md:px-4 px-6">
             {BoatRides.map((ride) => (
               <div key={ride.id} className="relative items-center gap-5">
                 <img
@@ -436,16 +436,16 @@ function Dashboard() {
                     alt={ride.image}
                     className="absolute top-0"
                   />
-                  <div className="absolute flex flex-row items-center lg:gap-[140px] md:gap-[45px] xl:mt-60 lg:mt-40 md:mt-20">
-                    <h1 className="text-white font-muktamalar xl:text-[30px] lg:text-[25px] md:text-[20px] font-semibold">
+                  <div className="absolute flex flex-row items-center lg:gap-[140px] md:gap-[45px] gap-[105px] xl:mt-60 lg:mt-40 md:mt-20 mt-[190px]">
+                    <h1 className="text-white font-muktamalar xl:text-[30px] lg:text-[25px] md:text-[20px] text-[25px] font-semibold">
                       {ride.name}
                     </h1>
-                    <h2 className="xl:w-[102px] xl:h-[41px] lg:w-[80px] lg:h-[36px] md:w-[60px] md:h-[26px] border border-white rounded-[6px] bg-white text-[#02343C] xl:text-[30px] lg:text-[25px] font-normal font-muktamalar flex items-center justify-center">
+                    <h2 className="xl:w-[102px] xl:h-[41px] lg:w-[80px] lg:h-[36px] md:w-[60px] md:h-[26px] w-[85px] h-[37px] border border-white md:rounded-[6px] rounded-[10px] bg-white text-[#02343C] xl:text-[30px] lg:text-[25px] text-[25px] font-normal font-muktamalar flex items-center justify-center">
                       {ride.price}
                     </h2>
                   </div>
-                  <div className="absolute xl:mt-[408px] lg:mt-[350px] md:mt-[220px] self-start xl:px-9 lg:px-4 md:px-2">
-                    <p className="text-white font-muktamalar xl:text-[20px] lg:text-[1.1rem] md:text-[0.9rem] xl:w-[369px] lg:w-[345px]">
+                  <div className="absolute xl:mt-[408px] lg:mt-[350px] md:mt-[220px] mt-[340px] self-start xl:px-9 lg:px-4 md:px-2 px-4">
+                    <p className="text-white font-muktamalar xl:text-[20px] lg:text-[1.1rem] md:text-[0.9rem] text-[1rem] xl:w-[369px] lg:w-[345px]">
                       {ride.description}
                     </p>
                   </div>
@@ -457,7 +457,7 @@ function Dashboard() {
                     alt={ride.bottom}
                     className="absolute"
                   />
-                  <h1 className="text-black xl:text-[30px] lg:text-[25px] md:text-[17px] font-muktamalar absolute">
+                  <h1 className="text-black xl:text-[30px] lg:text-[25px] md:text-[17px] text-[25px] font-muktamalar absolute">
                     {ride.duration}
                   </h1>
                 </div>
@@ -467,40 +467,42 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="container mx-auto  bg-[url(/background-image5.png)] bg-cover bg-center flex flex-col  h-[841px] w-full">
+      <div className="container mx-auto  bg-[url(/background-image5.png)] bg-cover bg-center flex flex-col md:h-[841px] h-[1130px] w-full">
         <div className="flex flex-col mt-[90px] items-center">
-          <h1 className="text-black text-[50px] font-nokora text-center">
+          <h1 className="text-black md:text-[50px] text-[40px] font-nokora text-center">
             Read Reviews,
           </h1>
-          <h1 className="text-black text-[50px] font-nokora font-bold">
+          <h1 className="text-black md:text-[50px] text-[40px] font-nokora font-bold text-center">
             Ride With Confidence.
           </h1>
           <div className="flex flex-col items-center mt-5">
             <div className="flex flex-row gap-1">
-              <p className="text-[#FFB10A] font-nokora text-[20px] font-semibold">
+              <p className="text-[#FFB10A] font-nokora md:text-[20px] text-[18px] font-semibold">
                 4.8/5
               </p>
               <Star className="w-5 h-5 mt-1 text-[#FFB10A] fill-[#FFB10A]" />
-              <span className="font-nokora font-normal text-black text-[20px]">
+              <span className="font-nokora font-normal text-black md:text-[20px] text-[18px]">
                 TrustWave Reviews
               </span>
             </div>
-            <p className="text-black text-[20px] ml-1">
+            <p className="text-black md:text-[20px] text-[18px] ml-1">
               Based On 3,450+ Verified Travelers
             </p>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center gap-10 mt-[50px] lg:px-[40px] md:px-[20px]">
+        <div className="md:flex md:flex-row flex flex-col justify-center items-center gap-10 mt-[50px] lg:px-[40px] md:px-[20px]">
           <div>
-            <img
-              src={review}
-              alt="review"
-              className="mb-5 lg:w-[110px] lg:h-[70px] md:w-[90px] md:h-[57px]"
-            />
-            <h1 className="font-nokora lg:text-[40px] md:text-[30px] lg:w-[282px] mb-9">
-              What Our Customer Are Saying
-            </h1>
-            <img src={reviewLine} alt="reviewLine" />
+            <div className="md:flex md:flex-col hidden">
+              <img
+                src={review}
+                alt="review"
+                className="mb-5 lg:w-[110px] lg:h-[70px] md:w-[90px] md:h-[57px]"
+              />
+            </div>
+              <h1 className="font-nokora lg:text-[40px] md:text-[30px] text-[35px] lg:w-[282px] md:w-[150px] w-[350px] md:mt-0 mt-10 md:text-start text-center mb-9">
+                What Our Customer Are Saying
+              </h1>
+              <img src={reviewLine} alt="reviewLine" className="md:mx-0 mx-auto"/>
           </div>
           <Swiper
             modules={[Autoplay, Pagination]}
@@ -518,19 +520,19 @@ function Dashboard() {
           >
             {Reviews.map((rev) => (
               <SwiperSlide key={rev.id} className="!h-auto">
-                <div className="relative items-center gap-5 ml-5 flex-shrink-0">
+                <div className="relative items-center gap-5 md:ml-5 ml-14 mx-auto">
                   <img
                     src={rev.background}
                     alt={rev.background}
-                    className="xl:w-[355px] xl:h-[392px] lg:w-[350px] lg:h-[350px] md:w-[350px] md:h-[350px]"
+                    className="xl:w-[355px] xl:h-[392px] lg:w-[350px] lg:h-[350px] md:w-[350px] md:h-[350px] w-[300px] h-[370px]"
                   />
 
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <p className="font-nokora xl:text-[20px] lg:text-[1rem] md:text-[0.9rem] font-normal max-w-[285px] px-4">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center xl:w-[322px] lg:w-[240px] md:w-[240px] w-[300px]">
+                    <p className="font-nokora xl:text-[20px] lg:text-[1rem] md:text-[0.9rem] font-normal md:max-w-[285px] px-4">
                       {rev.review}
                     </p>
 
-                    <div className="flex mt-7 self-start xl:ml-12 lg:ml-4 md:ml-4">
+                    <div className="flex mt-7 self-start xl:ml-12 lg:ml-4 md:ml-4 ml-4">
                       {Array.from({ length: rev.stars }).map((_, i) => (
                         <Star
                           key={i}
@@ -539,17 +541,17 @@ function Dashboard() {
                       ))}
                     </div>
 
-                    <div className="flex flex-row gap-5 mt-8 self-start xl:ml-12 lg:ml-4 md:ml-4 ">
+                    <div className="flex flex-row gap-5 mt-8 self-start xl:ml-12 lg:ml-4 md:ml-4 ml-4">
                       <img
                         src={rev.personImage}
                         alt={rev.personImage}
-                        className="lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px]"
+                        className="lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[70px] h-[70px]"
                       />
                       <div className="flex flex-col">
-                        <h1 className="font-nokora xl:text-[20px] lg:text-[1.1rem] md:text-[0.9rem] font-semibold mt-2">
+                        <h1 className="font-nokora xl:text-[20px] lg:text-[1.1rem] md:text-[0.9rem] text-[1.1rem] font-semibold mt-2">
                           {rev.name}
                         </h1>
-                        <p className="font-nokora xl:text-[18px] lg:text-[1.1rem] md:text-[0.9rem] font-normal">
+                        <p className="font-nokora xl:text-[18px] lg:text-[1.1rem] md:text-[0.9rem] text-[1.1rem] font-normal">
                           {rev.time}
                         </p>
                       </div>
@@ -562,20 +564,20 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="container mx-auto  bg-[url(/background-image7.png)] bg-cover bg-center flex justify-center items-center lg:h-[561px] md:h-[400px] w-full">
+      <div className="container mx-auto  bg-[url(/background-image7.png)] bg-cover bg-center flex justify-center items-center lg:h-[561px] md:h-[400px] h-[300px] w-full">
         <div className="flex flex-col items-center gap-10">
           <div>
-            <h1 className="font-nokora lg:text-[25px] md:text-[20px] font-black text-white text-center">
+            <h1 className="font-nokora lg:text-[25px] md:text-[20px] text-[18px] font-black text-white text-center">
               YOUR SEA ADVENTURE STARTS HERE.
               <br />
               DON’T JUST DREAM ABOUT THE WAVES — RIDE THEM TODAY!
             </h1>
           </div>
           <div className="flex flex-row gap-8">
-            <button className="border border-white rounded-[10px] xl:w-[200px] xl:h-[49px] lg:w-[170px] lg:h-[44px]  md:w-[150px] md:h-[40px] bg-white font-medium xl:text-[1.25rem] lg:text-[1.1rem] md:text-[1rem] text-[#023B45] hover:bg-[#FFC60A] hover:border-[#FFC60A] font-muktamalar">
+            <button className="border border-white rounded-[10px] xl:w-[200px] xl:h-[49px] lg:w-[170px] lg:h-[44px]  md:w-[150px] md:h-[40px] w-[150px] h-[40px] bg-white font-medium xl:text-[1.25rem] lg:text-[1.1rem] md:text-[1rem] text-[1rem] text-[#023B45] hover:bg-[#FFC60A] hover:border-[#FFC60A] font-muktamalar">
               READ MORE
             </button>
-            <button className="border border-white rounded-[10px] xl:w-[200px] xl:h-[49px] lg:w-[170px] lg:h-[44px]  md:w-[150px] md:h-[40px] bg-transparent font-medium xl:text-[1.25rem] lg:text-[1.1rem] md:text-[1rem] text-white hover:bg-[#FFFFff] hover:text-[#02343C] font-muktamalar">
+            <button className="border border-white rounded-[10px] xl:w-[200px] xl:h-[49px] lg:w-[170px] lg:h-[44px]  md:w-[150px] md:h-[40px] w-[150px] h-[40px] bg-transparent font-medium xl:text-[1.25rem] lg:text-[1.1rem] md:text-[1rem] text-[1rem] text-white hover:bg-[#FFFFff] hover:text-[#02343C] font-muktamalar">
               EXPLORE PACKAGES
             </button>
           </div>
