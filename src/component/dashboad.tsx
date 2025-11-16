@@ -36,7 +36,7 @@ function Dashboard() {
   return (
     <>
       <div>
-        <Navbar />
+      <Navbar/>
       </div>
       <div className="container mx-auto bg-[url(/background-image.png)] bg-cover bg-center xl:h-[1117px] lg:h-[900px] md:h-[800px] h-[600px] w-full flex flex-row">
         <div className="flex-1">
@@ -504,7 +504,8 @@ function Dashboard() {
               </h1>
               <img src={reviewLine} alt="reviewLine" className="md:mx-0 mx-auto"/>
           </div>
-          <Swiper
+          <div className="w-[100%] md:mt-0 md:w-[70%] md:pl-10 lg:w-[calc(100%-320px)]">
+            <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={5}
             slidesPerView={3}
@@ -519,8 +520,8 @@ function Dashboard() {
             className="!pb-12"
           >
             {Reviews.map((rev) => (
-              <SwiperSlide key={rev.id} className="!h-auto">
-                <div className="relative items-center gap-5 md:ml-5 ml-14 mx-auto">
+              <SwiperSlide key={rev.id} className="!h-auto flex">
+                <div className="relative items-center gap-5 md:ml-5 ml-14">
                   <img
                     src={rev.background}
                     alt={rev.background}
@@ -561,6 +562,8 @@ function Dashboard() {
               </SwiperSlide>
             ))}
           </Swiper>
+          </div>
+          
         </div>
       </div>
 
